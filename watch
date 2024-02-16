@@ -85,7 +85,7 @@ function idle {
   done
 }
 
-restore
+#restore
 
 trap final_backup SIGHUP SIGINT SIGTERM
 trap "backup; idle" USR1
